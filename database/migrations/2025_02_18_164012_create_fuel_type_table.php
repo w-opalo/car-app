@@ -22,6 +22,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('furl_type');
+        Schema::dropIfExists('fuel_type');
     }
 };
