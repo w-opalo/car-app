@@ -30,7 +30,9 @@ use Illuminate\Support\Facades\Route;
 // });
 
 Route::get('/', [HomeController::class, 'index']);
+
 Route::get('/search', [CarController::class, 'search']);
-Route::get('/car', CarController::class);
+Route::resource('/car', CarController::class);
+
 Route::get('/signup', [SignupController::class, 'create']);
 Route::get('/login', [LoginController::class, 'login']);
