@@ -12,8 +12,8 @@ class HomeController extends Controller
 {
     public function index()
     {
-        $car = Car::find(1);
-        // dd($car);
+        $maker = Maker::factory()->count(5)->create(['name' => 'hellen']);
+        dd($maker);
         return view('home.index');
     }
 }
