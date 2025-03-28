@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Maker;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -14,6 +15,7 @@ return new class extends Migration
         Schema::create('cars', function (Blueprint $table) {
             $table->id();
             $table->foreignId('maker_id')->constrained('makers');
+            // $table->foreignId(Maker::class);
             $table->foreignId('models_id')->constrained('models');
             $table->integer('year');
             $table->integer('price');

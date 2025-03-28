@@ -28,7 +28,7 @@ class CarFactory extends Factory
         return [
             'maker_id' => Maker::inRandomOrder()->first()->id,
             'models_id' => function (array $attributes) {
-                return Model::where('make_id', $attributes['maker_id'])
+                return Model::where('maker_id', $attributes['maker_id'])
                     ->inRandomOrder()->first()->id;
             },
             'year' => fake()->year(),

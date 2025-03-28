@@ -86,7 +86,7 @@
             />
         </svg>
 
-        Signup
+        Signup home
         </a>
         <a href="/login.html" class="btn btn-login flex items-center">
         <svg

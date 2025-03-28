@@ -12,7 +12,7 @@ class HomeController extends Controller
 {
     public function index()
     {
-        $maker = Maker::factory()->count(5)->create(['name' => 'hellen']);
+        $maker = Maker::factory()->count(5)->create();
         dd($maker);
         return view('home.index');
     }

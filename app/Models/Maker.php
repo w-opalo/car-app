@@ -25,4 +25,9 @@ class Maker extends Model
     {
         return $this->hasMany(Car::class);
     }
+
+    // public static function newFactory()
+    // {
+    //     return newMakerFactory::new();
+    // }
 }

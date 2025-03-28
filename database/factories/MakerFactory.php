@@ -11,6 +11,7 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 class MakerFactory extends Factory
 {
 
+    // protected $model = Maker::class;
     /**
      * Define the model's default state.
      *
@@ -19,7 +20,7 @@ class MakerFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'name' => fake()->word(),
         ];
     }
 }
