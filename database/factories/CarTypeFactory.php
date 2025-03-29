@@ -17,7 +17,17 @@ class CarTypeFactory extends Factory
     public function definition(): array
     {
         return [
-            'name' => fake()->randomElement(['Seden', 'SUV', 'Track', 'Coupe', 'Van', 'Crossover']),
+            'name' => fake()
+                ->randomElement(
+                    [
+                        'Seden',
+                        'SUV',
+                        'Track',
+                        'Coupe',
+                        'Van',
+                        'Crossover'
+                    ]
+                ),
         ];
     }
 }

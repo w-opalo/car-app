@@ -79,6 +79,6 @@ class Car extends Model
 
     public function favouredUsers(): BelongsToMany
     {
-        return $this->belongsToMany(User::class, 'favourite_cars');
+        return $this->belongsToMany(User::class, 'favourite_cars', 'car_id', 'user_id');
     }
 }
