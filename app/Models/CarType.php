@@ -11,7 +11,9 @@ class CarType extends Model
     use HasFactory;
 
     public $timestamps = false;
+
     protected $table = 'car_types';
+
     protected $fillable = [
         'name',
     ];

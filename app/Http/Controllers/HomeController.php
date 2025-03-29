@@ -13,9 +13,6 @@ class HomeController extends Controller
 {
     public function index()
     {
-        // $fuelType = [
-        //     'name' => 'Electric'
-        // ];
-        // $fuelType::create($fuelType);
+        $make = Maker::factory()->count(10)->create();
     }
 }
